@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/node-js.svg">
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <title>JavaScript Tutorial</title>
+</head>
+
+<body>
+    <header>
+        <h1>Building Blocks</h1>
+        <nav>
+            <a href="../home.html">Home</a>
+            <a href="../index.html">Introduction</a>
+            <a href="../buildBlock.html" class="active1">Building Blocks</a>
+            <a href="../examples.html">Examples of JavaScript</a>
+            <a href="../bib.html">Bibliography</a>
+        </nav>
+    </header>
+    <aside class="left">
+        <ul>
+            <li><a href="variables.html">Variables</a></li>
+            <li><a href="dataTypes.html">Data Types</a></li>
+            <li><a href="operators.html">Operators</a></li>
+            <li><a href="functions.html">Functions</a></li>
+            <li><a href="decisionMaking.html" class="active2">Decision Making</a></li>
+            <li><a href="loops.html">Loops and Iteration</a></li>
+            <li><a href="arrays.html">Arrays</a></li>
+            <li><a href="string.html">Strings</a></li>
+            <li><a href="eventHandling.html">Event Handling</a></li>
+        </ul>
+    </aside>
+    <section class="right">
+        <h1>Decision Making</h1>
+        <table>
+            <caption> Like other languages, JavaScript also provides many decision-making statements:</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Statements</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Syntax</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>if</td>
+                    <td>"if" is used to check for a condition and whether it's true or not.
+                        The condition could be any expression that returns true or false.
+                        When the condition satisfies then the statement following the "if" statement is executed.</td>
+                    <td><code>
+                            if(condition){<br>
+                                statements...<br>
+                            }<br>
+                        </code></td>
+                </tr>
+                <tr>
+                    <td>else</td>
+                    <td>else statements are used with if statements.
+                        When the "if" condition fails then the "else" statement is executed.</td>
+                    <td><code>
+                            if(condition){<br>
+                                statements<br>
+                            }<br>
+                            else{<br>
+                                statements<br>
+                            }<br>
+                        </code></td>
+                </tr>
+                <tr>
+                    <td>else if</td>
+                    <td>Suppose there is a variety of conditions that you want to check.
+                        You can use multiple "if" statements to do this task.
+                        All the "if" conditions will be checked one by one.
+                        But what if you want that once a condition satisfies then don't perform further
+                        conditional checks?
+                        At this point "else if" statement is what you need.</td>
+                    <td><code>
+                            if(condition){<br>
+                                statements<br>
+                            }<br>
+                            else if(condition){<br>
+                                statements<br>
+                            }<br>
+                            else{<br>
+                                statements<br>
+                            }<br>
+                        </code></td>
+                </tr>
+                <tr>
+                    <td>switch case</td>
+                    <td>Switch statements are used when there are multiple conditions to check and when the
+                        conditions are values instead of ranges.</td>
+                    <td><code>
+                            var name;<br>
+                            switch(name)<br>
+                            {<br>
+                                case value-1: statements; break;<br>
+                                case value-2: statements; break;<br>
+                                case value-3: statements; break;<br>
+                                ............<br>
+                                case value-n: statements; break;<br>
+                                default: statements; break;<br>
+                            }<br>
+                        </code></td>
+                </tr>
+                <tr>
+                    <td>ternary opretor</td>
+                    <td>Ternary operator is preferred by many programmers.
+                        It contains 3 operands that's why the name is "ternary operator".
+                        If the condition goes right then the statement before the colon is executed and if false then
+                        the statement after the colon is executed.
+                        Multiple statements are not allowed.
+                        But you can execute multiple statements by making a function and calling the function if
+                        the condition goes true or false accordingly.</td>
+                    <td><code>
+                            condition? if-true-execute-this : if-false-execute-this;
+                        </code></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>

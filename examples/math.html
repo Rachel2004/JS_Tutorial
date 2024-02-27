@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/node-js.svg">
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <script type="text/javascript">
+
+        function power() {
+            var b = parseInt(prompt('Please enter a base'));
+            var e = parseInt(prompt('Please enter an exponent'));
+            document.getElementById("demo").innerHTML = (Math.pow(b, e));
+        }
+
+        function sqroot() {
+            var r = parseInt(prompt('Please enter a number '));
+            document.getElementById("demo").innerHTML = (Math.sqrt(r));
+        }
+
+        function truncate() {
+            var t = parseInt(prompt('Please enter a number'));
+            document.getElementById("demo").innerHTML = (Math.trunc(t));
+        }
+
+        function random() {
+            document.getElementById("demo").innerHTML = (Math.random());
+        }
+
+        function signum() {
+            var s = parseInt(prompt('Please enter a number'));
+            document.getElementById("demo").innerHTML = (Math.sign(s));
+        }
+
+    </script>
+    <title>JavaScript Tutorial</title>
+</head>
+
+<body>
+    <header>
+        <h1>Examples of Javascript</h1>
+        <nav>
+            <a href="../home.html">Home</a>
+            <a href="../index.html">Introduction</a>
+            <a href="../buildBlock.html">Building Blocks</a>
+            <a href="../examples.html" class="active1">Examples of JavaScript</a>
+            <a href="../bib.html">Bibliography</a>
+        </nav>
+    </header>
+    <aside class="left">
+        <ul>
+            <li><a href="array.html">Arrays</a></li>
+            <li><a href="event.html">Event Handling</a></li>
+            <li><a href="fun&obj.html">Functions and Objects</a></li>
+            <li><a href="ifelse.html">if-else</a></li>
+            <li><a href="switch.html">Switch case</a></li>
+            <li><a href="loop.html">Loops</a></li>
+            <li><a href="math.html" class="active2">Math Objects</a></li>
+            <li><a href="string.html">Strings</a></li>
+        </ul>
+    </aside>
+    <section class="right">
+        <h1>Calculator</h1>
+        <p>
+            This program uses math functions in Javascript to make a calculator.
+        </p>
+        <br><br>
+        <aside class="output">
+            <h2>Output:</h2><br>
+            <p id="demo">This is a paragraph.</p><br>
+            <button type="button" onclick="power()">Exponent</button>
+            <button type="button" onclick="sqroot()">Square Root</button>
+            <button type="button" onclick="truncate()">Truncate</button>
+            <button type="button" onclick="random()">Random</button>
+            <button type="button" onclick="signum()">Signum</button>
+        </aside>
+        <br><br>
+        <h3>Source Code</h3>
+        <iframe src="../source/math.txt" title="source code">Source Code</iframe>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/node-js.svg">
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <title>JavaScript Tutorial</title>
+    <script type="text/javascript">
+        function Switch() {
+            var grade = prompt("Please enter a grade. Please enter in capital letters.");
+
+            switch (grade) {
+                case 'A': document.getElementById("demo").innerHTML = ("Excellent");
+                    break;
+
+                case 'B': document.getElementById("demo").innerHTML = ("Very Good");
+                    break;
+
+                case 'C': document.getElementById("demo").innerHTML = ("Satisfactory");
+                    break;
+
+                case 'D': document.getElementById("demo").innerHTML = ("Not Satisfactory");
+                    break;
+
+                case 'F': document.getElementById("demo").innerHTML = ("Failed");
+                    break;
+
+                default: document.getElementById("demo").innerHTML = ("Unknown grade")
+            }
+        }
+
+    </script>
+    <title>JavaScript Tutorial</title>
+</head>
+
+<body>
+    <header>
+        <h1>Examples of Javascript</h1>
+        <nav>
+            <a href="../home.html">Home</a>
+            <a href="../index.html">Introduction</a>
+            <a href="../buildBlock.html">Building Blocks</a>
+            <a href="../examples.html" class="active1">Examples of JavaScript</a>
+            <a href="../bib.html">Bibliography</a>
+        </nav>
+    </header>
+    <aside class="left">
+        <ul>
+            <li><a href="array.html">Arrays</a></li>
+            <li><a href="event.html">Event Handling</a></li>
+            <li><a href="fun&obj.html">Functions and Objects</a></li>
+            <li><a href="ifelse.html">if-else</a></li>
+            <li><a href="switch.html" class="active2">Switch case</a></li>
+            <li><a href="loop.html">Loops</a></li>
+            <li><a href="math.html">Math Objects</a></li>
+            <li><a href="string.html">Strings</a></li>
+        </ul>
+    </aside>
+    <section class="right">
+        <h1>Switch Case</h1>
+        <p>
+            This program uses Switch Case to comment on the grade entered by the user. For more information visit <a
+                href="../buildBlocks/decisionMaking.html">descision making</a>.
+        </p>
+        <br><br>
+        <aside class="output">
+            <h2>Output:</h2>
+            <br>
+            <p id="demo">This is a paragraph.</p><br>
+            <button type="button" onclick="Switch()">Start</button><br>
+            Reload the page and try again...
+        </aside>
+        <br><br>
+        <h3>Source Code</h3>
+        <iframe src="../source/switch.txt" title="source code">Source Code</iframe>
+    </section>
+</body>
+
+</html>

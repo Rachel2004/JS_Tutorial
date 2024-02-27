@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Array</title>
+	<h1>Array</h1>
+	<script>
+
+		var n = parseInt(prompt("How many elements should your array contain?"));
+		const ARRY = new Array(n);
+
+		for (i = 0; i <= n - 1; i++)
+			ARRY[i] = prompt("Enter element " + (i + 1));
+
+		function Push() {
+			var e = prompt("Add another element");
+			const newLength = ARRY.push(e);
+			document.write("New array: " + ARRY, "<br>");
+			document.write("New length: " + newLength);
+		}
+		function Pop() {
+			const popped = ARRY.pop();
+			document.write("New array: " + ARRY, "<br>");
+			document.write("Popped element: " + popped);
+		}
+		function Reverse() {
+			document.write("Array before reversing: " + ARRY, "<br>");
+			ARRY.reverse();
+			document.write("Array after reversing: " + ARRY);
+		}
+		function Sort() {
+			document.write("Array before sort: " + ARRY, "<br>");
+			ARRY.sort();
+			document.write("Array after sort: " + ARRY);
+		}
+		function Slice() {
+			var s = parseInt(prompt("Enter starting index"));
+			var e = parseInt(prompt("Enter ending index"));
+			document.write(ARRY.slice(s, e));
+		}
+		function Shift() {
+			document.write("Array before shift: " + ARRY, "<br>");
+			const shifted = ARRY.shift();
+			document.write("Array after shift: " + ARRY, "<br>");
+			document.write("Removed element: " + shifted);
+		}
+	</script>
+
+</head>
+
+<body>
+	<button onclick="Push()">Push()</button>
+	<button onclick="Pop()">Pop()</button>
+	<button onclick="Reverse()">Reverse()</button>
+	<button onclick="Sort()">Sort()</button>
+	<button onclick="Slice()">Slice()</button>
+	<button onclick="Shift()">Shift)</button>
+</body>
+
+</html>

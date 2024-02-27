@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<script>
+		function power() {
+            var b = parseInt(prompt('Please enter a base'));
+            var e = parseInt(prompt('Please enter an exponent'));
+            document.getElementById("demo").innerHTML = (Math.pow(b, e));
+        }
+
+        function sqroot() {
+            var r = parseInt(prompt('Please enter a number '));
+            document.getElementById("demo").innerHTML = (Math.sqrt(r));
+        }
+
+        function truncate() {
+            var t = parseInt(prompt('Please enter a number'));
+            document.getElementById("demo").innerHTML = (Math.trunc(t));
+        }
+
+        function random() {
+            document.getElementById("demo").innerHTML = (Math.random());
+        }
+
+        function signum() {
+            var s = parseInt(prompt('Please enter a number'));
+            document.getElementById("demo").innerHTML = (Math.sign(s));
+        }
+	</script>
+</head>
+
+<body>
+	Click a button...<br><br>
+
+	<button onclick="power()">Exponent</button>
+	<button onclick="sqroot()">Square Root</button>
+	<button onclick="truncate()">Truncate</button>
+	<button onclick="random()">Random</button>
+	<button onclick="signum()">Signum</button>
+</body>
+
+</html>

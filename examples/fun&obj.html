@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/node-js.svg">
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <script type="text/javascript">
+        const Manager =
+        {
+            name: "John",
+            age: 27,
+            job: "Software Engineer"
+        }
+        const Intern =
+        {
+            name: "Ben",
+            age: 21,
+            job: "Software Engineer Intern"
+        }
+
+        function sayHi() {
+            document.write(`Hello, my name is ${this.name}. <br>`)
+        }
+        Manager.sayHi = sayHi;      // add sayHi function to both objects
+        Intern.sayHi = sayHi;
+
+        function howOldAmI() {
+            document.write(`I am ${this.age} years old. <br>`);
+        }
+        Manager.howOldAmI = howOldAmI;      // add howOldAmI function to both objects
+        Intern.howOldAmI = howOldAmI;
+
+        function whatIsMyJob() {
+            document.write(`I am a ${this.job}. <br>`);
+        }
+        Manager.whatIsMyJob = whatIsMyJob;      // add whatIsMyJob function to both objects
+        Intern.whatIsMyJob = whatIsMyJob;
+
+        function manDisp() {
+            Manager.sayHi();        // Hello, my name is John.'
+            Manager.howOldAmI();        // I am 27 years old.
+            Manager.whatIsMyJob();      // I am a Software Engineer.
+        }
+
+        function intDisp() {
+            Intern.sayHi();     // Hello, my name is Ben.'
+            Intern.howOldAmI();     // I am 21 years old.
+            Intern.whatIsMyJob();       // I am a Software Engineer Intern.
+        }
+    </script>
+    <title>JavaScript Tutorial</title>
+</head>
+
+<body>
+    <header>
+        <h1>Examples of Javascript</h1>
+        <nav>
+            <a href="../home.html">Home</a>
+            <a href="../index.html">Introduction</a>
+            <a href="../buildBlock.html">Building Blocks</a>
+            <a href="../examples.html" class="active1">Examples of JavaScript</a>
+            <a href="../bib.html">Bibliography</a>
+        </nav>
+    </header>
+    <aside class="left">
+        <ul>
+            <li><a href="array.html">Arrays</a></li>
+            <li><a href="event.html">Event Handling</a></li>
+            <li><a href="fun&obj.html" class="active2">Functions and Objects</a></li>
+            <li><a href="ifelse.html">if-else</a></li>
+            <li><a href="switch.html">Switch case</a></li>
+            <li><a href="loop.html">Loops</a></li>
+            <li><a href="math.html">Math Objects</a></li>
+            <li><a href="string.html">Strings</a></li>
+        </ul>
+    </aside>
+    <section class="right">
+        <h1>Employee</h1>
+        <p>
+            This program shows the use of objects' properties and functions. For more information go to <a
+                href="../buildBlocks/functions.html">functions</a>.
+        </p>
+        <br><br>
+        <aside class="output">
+            <h2>Output:</h2><br>
+            <button type="button" onclick="manDisp()">Manager</button>
+            <button type="button" onclick="intDisp()">Intern</button>
+        </aside>
+        <br><br>
+        <h3>Source Code</h3>
+        <iframe src="../source/fun&obj.txt" title="source code">Source Code</iframe>
+    </section>
+</body>
+
+</html>

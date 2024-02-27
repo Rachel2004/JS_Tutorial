@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/node-js.svg">
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <script type="text/javascript">
+
+        var n = parseInt(prompt("How many elements should your array contain?"));
+        const ARRY = new Array(n);
+
+        for (i = 0; i <= n - 1; i++)
+            ARRY[i] = prompt("Enter element " + (i + 1));
+
+        function Push() {
+            var e = prompt("Add another element");
+            const newLength = ARRY.push(e);
+            document.getElementById("demo1").innerHTML = ("New array: " + ARRY);
+            document.getElementById("demo2").innerHTML = ("New length: " + newLength);
+        }
+        function Pop() {
+            const popped = ARRY.pop();
+            document.getElementById("demo1").innerHTML = ("New array: " + ARRY);
+            document.getElementById("demo2").innerHTML = ("Popped element: " + popped);
+        }
+        function Reverse() {
+            document.getElementById("demo1").innerHTML = ("Array before reversing: " + ARRY);
+            ARRY.reverse();
+            document.getElementById("demo2").innerHTML = ("Array after reversing: " + ARRY);
+        }
+        function Sort() {
+            document.getElementById("demo1").innerHTML = ("Array before sort: " + ARRY);
+            ARRY.sort();
+            document.getElementById("demo2").innerHTML = ("Array after sort: " + ARRY);
+        }
+        function Slice() {
+            var s = parseInt(prompt("Enter starting index"));
+            var e = parseInt(prompt("Enter ending index"));
+            ARRY.slice(s, e)
+            document.getElementById("demo1").innerHTML = ("New array: " + ARRY);
+            document.getElementById("demo2").innerHTML = null;
+        }
+        function Shift() {
+            const shifted = ARRY.shift();
+            document.getElementById("demo1").innerHTML = ("Array after shift: " + ARRY);
+            document.getElementById("demo2").innerHTML = ("Shifted element :" + shifted);
+
+        }
+    </script>
+    <title>JavaScript Tutorial</title>
+</head>
+
+<body>
+    <header>
+        <h1>Examples of Javascript</h1>
+        <nav>
+            <a href="../home.html">Home</a>
+            <a href="../index.html">Introduction</a>
+            <a href="../buildBlock.html">Building Blocks</a>
+            <a href="../examples.html" class="active1">Examples of JavaScript</a>
+            <a href="../bib.html">Bibliography</a>
+        </nav>
+    </header>
+    <aside class="left">
+        <ul>
+            <li><a href="array.html" class="active2">Arrays</a></li>
+            <li><a href="event.html">Event Handling</a></li>
+            <li><a href="fun&obj.html">Functions and Objects</a></li>
+            <li><a href="ifelse.html">if-else</a></li>
+            <li><a href="switch.html">Switch case</a></li>
+            <li><a href="loop.html">Loops</a></li>
+            <li><a href="math.html">Math Objects</a></li>
+            <li><a href="string.html">Strings</a></li>
+        </ul>
+    </aside>
+    <section class="right">
+        <h1>Arrays</h1>
+        <p>
+            This program shows the use of arrays and their methods. For more information go to <a
+                href="../buildBlocks/arrays.html">arrays</a>.
+        </p>
+        <br><br>
+        <aside class="output">
+            <h2>Output:</h2><br>
+            <p id="demo1">This is a paragraph.</p>
+            <p id="demo2">This is another paragraph.</p><br>
+            <button onclick="Push()">Push()</button>
+            <button onclick="Pop()">Pop()</button>
+            <button onclick="Reverse()">Reverse()</button>
+            <button onclick="Sort()">Sort()</button>
+            <button onclick="Slice()">Slice()</button>
+            <button onclick="Shift()">Shift()</button>
+        </aside>
+        <br><br>
+        <h3>Source Code</h3>
+        <iframe src="../source/array.txt" title="source code">Source Code</iframe>
+    </section>
+</body>
+
+</html>

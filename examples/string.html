@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/node-js.svg">
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <script type="text/javascript">
+        var s = prompt("Please enter a string.");
+
+        function Concat() {
+            var e = prompt("Add another string");
+            document.getElementById("demo1").innerHTML = ("Old string: " + s);
+            document.getElementById("demo2").innerHTML = ("New string: " + s.concat(e));
+        }
+        function Replace() {
+            var st = "Hello World!";
+            document.getElementById("demo1").innerHTML = ("Old string: " + st);
+            document.getElementById("demo2").innerHTML = ("New string: " + st.replace("World", "Moon"));
+        }
+        function Substring() {
+            var str = "the quick brown fox jumps over the lazy dog ";
+            var n = parseInt(prompt("Please enter the starting index"));
+            var m = parseInt(prompt("Please enter the ending index (not more than" + str.length + ")"));
+            document.getElementById("demo1").innerHTML = ("Old string: " + str);
+            document.getElementById("demo2").innerHTML = ("New string: " + str.substring(n, m));
+        }
+        function lastIndex() {
+            document.getElementById("demo1").innerHTML = ("String: " + s);
+            var l = prompt("Please enter a charecter to find its last occurance.");
+            document.getElementById("demo2").innerHTML = ("Last occurance of " + l + " is " + s.lastIndexOf(l));
+        }
+        function Charat() {
+            document.getElementById("demo1").innerHTML = ("String: " + s);
+            var l = parseInt(prompt("Please enter an index number."));
+            document.getElementById("demo2").innerHTML = ("Charecter at " + l + " is " + s.charAt(l));
+        }
+        function upper() {
+            document.getElementById("demo1").innerHTML = ("String before Upper Case: " + s);
+            document.getElementById("demo2").innerHTML = ("String after Upper Case : " + s.toUpperCase());
+        }
+    </script>
+    <title>JavaScript Tutorial</title>
+</head>
+
+<body>
+    <header>
+        <h1>Examples of Javascript</h1>
+        <nav>
+            <a href="../home.html">Home</a>
+            <a href="../index.html">Introduction</a>
+            <a href="../buildBlock.html">Building Blocks</a>
+            <a href="../examples.html" class="active1">Examples of JavaScript</a>
+            <a href="../bib.html">Bibliography</a>
+        </nav>
+    </header>
+    <aside class="left">
+        <ul>
+            <li><a href="array.html">Arrays</a></li>
+            <li><a href="event.html">Event Handling</a></li>
+            <li><a href="fun&obj.html">Functions and Objects</a></li>
+            <li><a href="ifelse.html">if-else</a></li>
+            <li><a href="switch.html">Switch case</a></li>
+            <li><a href="loop.html">Loops</a></li>
+            <li><a href="math.html">Math Objects</a></li>
+            <li><a href="string.html" class="active2">Strings</a></li>
+        </ul>
+    </aside>
+    <section class="right">
+        <h1>Strings</h1>
+        <p>
+            This program shows the use of strings and their methods. For more information visit <a
+                href="../buildBlocks/string.html">strings</a>.
+        </p>
+        <br><br>
+        <aside class="output">
+            <h2>Output:</h2><br>
+            <p id="demo1">This is a paragraph.</p>
+            <p id="demo2">This is another paragraph.</p><br>
+            <button type="button" onclick="Concat()">concat()</button>
+            <button type="button" onclick="Replace()">replace()</button>
+            <button type="button" onclick="Substring()">substing()</button>
+            <button type="button" onclick="lastIndex()">lastIndexOf()</button>
+            <button type="button" onclick="Charat()">charAt()</button>
+            <button type="button" onclick="upper()">toUpperCase()</button>
+        </aside>
+        <br><br>
+        <h3>Source Code</h3>
+        <iframe src="../source/string.txt" title="source code">Source Code</iframe>
+    </section>
+</body>
+
+</html>

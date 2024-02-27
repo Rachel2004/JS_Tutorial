@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event Handling</title>
+    <script>
+        function Welcome() {
+            alert("Welcome to my page.")
+        }
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+    </script>
+</head>
+
+<body onload="Welcome()">
+    <h1>Event Handling</h1>
+    <p id="demo">This is a paragraph.</p>
+    <button type="button" onclick="displayDate()">Display Date</button>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Switch case</title>
+    <script>
+        function Switch() {
+            var grade = prompt("Please enter a grade. Please enter in capital letters.");
+
+            switch (grade) {
+                case 'A': document.getElementById("demo").innerHTML = ("Excellent");
+                    break;
+
+                case 'B': document.getElementById("demo").innerHTML = ("Very Good");
+                    break;
+
+                case 'C': document.getElementById("demo").innerHTML = ("Satisfactory");
+                    break;
+
+                case 'D': document.getElementById("demo").innerHTML = ("Not Satisfactory");
+                    break;
+
+                case 'F': document.getElementById("demo").innerHTML = ("Failed");
+                    break;
+
+                default: document.getElementById("demo").innerHTML = ("Unknown grade")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p id="demo">This is a paragraph.</p><br>
+    <button type="button" onclick="Switch()">Start</button><br>
+    Reload page and try again...
+</body>
+
+</html>

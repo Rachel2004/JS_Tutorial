@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/node-js.svg">
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <title>JavaScript Tutorial</title>
+</head>
+
+<body>
+    <header>
+        <h1>Building Blocks</h1>
+        <nav>
+            <a href="../home.html">Home</a>
+            <a href="../index.html">Introduction</a>
+            <a href="../buildBlock.html" class="active1">Building Blocks</a>
+            <a href="../examples.html">Examples of JavaScript</a>
+            <a href="../bib.html">Bibliography</a>
+        </nav>
+    </header>
+    <aside class="left">
+        <ul>
+            <li><a href="variables.html">Variables</a></li>
+            <li><a href="dataTypes.html">Data Types</a></li>
+            <li><a href="operators.html">Operators</a></li>
+            <li><a href="functions.html">Functions</a></li>
+            <li><a href="decisionMaking.html">Decision Making</a></li>
+            <li><a href="loops.html" class="active2">Loops and Iteration</a></li>
+            <li><a href="arrays.html">Arrays</a></li>
+            <li><a href="string.html">Strings</a></li>
+            <li><a href="eventHandling.html">Event Handling</a></li>
+        </ul>
+    </aside>
+    <section class="right">
+        <h1>Loops and Iteration</h1>
+        Looping in programming languages is a feature that facilitates the execution of a set of
+        instructions/functions repeatedly while some condition evaluates to true.
+        In computer programming, a loop is a sequence of instructions that is repeated until a certain
+        condition is reached.<br><br>
+        <ul>
+            <li>An operation is done, such as getting an item of data and changing it, and then some condition
+                is checked such as whether a counter has reached a prescribed number.</li>
+            <li>Counter not Reached: If the counter has not reached the desired number, the next instruction in
+                the sequence returns to the first instruction in the sequence and repeats it.</li>
+            <li>Counter reached: If the condition has been reached, the next instruction “falls through” to the
+                next sequential instruction or branches outside the loop.</li>
+        </ul>
+        There are mainly two types of loops:
+        <ol>
+            <li>Entry Controlled loops: In these types of loops, the test condition is tested before entering
+                the loop body. <em>For Loops</em> and <em>While Loops </em> are entry-controlled loops.</li>
+            <li>Exit Controlled loops: In these types of loops the test condition is tested or evaluated at the
+                end of the loop body. Therefore, the loop body will execute at least once, irrespective of
+                whether the test condition is true or false. The <em>do-while loop</em> is exit controlled loop.
+            </li>
+        </ol><br><br>
+        <div class="body_wrapper">
+            <figure>
+                <img class="imgleft" alt="while loop" src="../images/WHILE.png">
+                <figcaption>
+                    <h3>Syntax:</h3>
+                    <br>
+                    <code>
+                        while (condition) {<br><br>
+                        statements<br><br>
+                        increment/decrement<br><br>
+                        }
+                    </code><br>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="body_wrapper" class="clear">
+            <figure>
+                <img class="imgright" alt="while loop" src="../images/FOR.png">
+                <figcaption>
+                    <h3>Syntax:</h3>
+                    <br>
+                    <code>
+                        for (initialization; condition; increment/decrement) {<br><br>
+                        statements<br><br>
+                        }
+                    </code><br>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="body_wrapper" class="clear">
+
+            <figure>
+                <img class="imgleft" alt="while loop" src="../images/DO.png">
+                <figcaption>
+                    <h3>Syntax:</h3>
+                    <br>
+                    <code>
+                        do {<br><br>
+                        statements<br><br>
+                        } while (condition)
+                    </code><br>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+</body>
+
+</html>

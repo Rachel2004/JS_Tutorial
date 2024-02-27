@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/node-js.svg">
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <title>JavaScript Tutorial</title>
+</head>
+
+<body>
+    <header>
+        <h1>Building Blocks</h1>
+        <nav>
+            <a href="../home.html">Home</a>
+            <a href="../index.html">Introduction</a>
+            <a href="../buildBlock.html" class="active1">Building Blocks</a>
+            <a href="../examples.html">Examples of JavaScript</a>
+            <a href="../bib.html">Bibliography</a>
+        </nav>
+    </header>
+    <aside class="left">
+        <ul>
+            <li><a href="variables.html" class="active2">Variables</a></li>
+            <li><a href="dataTypes.html">Data Types</a></li>
+            <li><a href="operators.html">Operators</a></li>
+            <li><a href="functions.html">Functions</a></li>
+            <li><a href="decisionMaking.html">Decision Making</a></li>
+            <li><a href="loops.html">Loops and Iteration</a></li>
+            <li><a href="arrays.html">Arrays</a></li>
+            <li><a href="string.html">Strings</a></li>
+            <li><a href="eventHandling.html">Event Handling</a></li>
+        </ul>
+    </aside>
+    <section class="right">
+        <h1>Variables</h1>
+        Variables are used as symbolic names for values in application.
+        The names of variables, called identifiers, conform to certain rules.<br>
+        A JavaScript identifier usually starts with a letter, underscore (_), or a dollar sign ($).
+        Subsequent characters can also be digits (0 – 9).
+        Because JavaScript is case-sensitive, letters include the characters A through Z (uppercase)
+        as well as a through z (lowercase). <br>
+        Some examples of legal names are <code>Number_hits</code>, <code>temp99</code>,
+        <code>$credit</code>, and <code>_name</code>.
+        <br><br>
+        <h2>Declaring variables</h2>
+        You can declare a variable in two ways:
+        <ul>
+            <li>With the keyword var. For example, <code>var x = 42</code>. This syntax can be used to declare
+                both local and global variables, depending on the execution context.</li>
+            <li>With the keyword const or let. For example, <code>let y = 13</code>. This syntax can be used to
+                declare a block-scope local variable. (See Variable scope below.)</li>
+        </ul>
+        <br><br>
+        <h2>Declaration and initialization</h2>
+        In a statement like <code>let x = 42</code>, the <code>let x</code> part is called a declaration, and
+        the <code>= 42</code> part is called an initializer.
+        The declaration allows the variable to be accessed later in the code without throwing a
+        <code>ReferenceError</code>,
+        while the initializer assigns a value to the variable. In <code>var</code> and <code>let</code>
+        declarations,
+        the initializer is optional. If a variable is declared without an initializer, it is assigned the value
+        undefined.<br>
+        In essence, let x = 42 is equivalent to let x; x = 42.<br>
+        <code>const</code> declarations always need an initializer, because they forbid any kind of assignment
+        after declaration,
+        and implicitly initializing it with undefined is likely a programmer mistake.
+    </section>
+</body>
+
+</html>

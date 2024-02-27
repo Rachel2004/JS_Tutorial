@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css?family=Unica+One);
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background: linear-gradient(-45deg, rgb(238, 119, 82), rgb(231, 60, 126), rgb(35, 166, 213), rgb(35, 213, 171));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    text-transform: uppercase;
+    text-align: center;
+    font: 100%/1.4 Unica One;
+    color: rgb(0, 0, 0);
+    padding: 2%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header h1 {
+    font-size: 6rem;
+}
+
+nav {
+    font-size: 1.1rem;
+    font-variant: small-caps;
+}
+
+nav a {
+    padding: 1%;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+nav a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.active1 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.left {
+    font-variant: small-caps;
+    font-size: 1.1rem;
+    background: rgb(34, 34, 34);
+    width: 14%;
+    min-height: 100vh;
+    display: block;
+    float: left;
+    padding: 1%;
+}
+
+.left li {
+    list-style-type: none;
+}
+
+.left a {
+    padding: 5%;
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.left a:hover {
+    color: rgb(34, 34, 34);
+    background: linear-gradient(-45deg, rgb(238, 119, 82), rgb(231, 60, 126), rgb(35, 166, 213), rgb(35, 213, 171));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.active2 {
+    color: rgb(34, 34, 34);
+    background: linear-gradient(-45deg, rgb(238, 119, 82), rgb(231, 60, 126), rgb(35, 166, 213), rgb(35, 213, 171));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.right {
+    font-size: 1.1rem;
+    margin: 1%;
+    width: 81%;
+    min-height: 100vh;
+    display: block;
+    float: right;
+}
+
+section {
+    text-align: justify;
+    font-size: 1.10rem;
+}
+
+table {
+    margin: auto;
+    width: 80%;
+    table-layout: auto;
+    font-size: 1.10rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+}
+
+tr {
+    opacity: 0.85;
+    text-align: center;
+}
+
+tr>td:nth-child(1) {
+    width: 20%;
+    text-align: left;
+}
+
+tr>td:nth-child(3) {
+    width: 20%;
+}
+
+tr:hover {
+    opacity: 1;
+}
+
+td {
+    padding: 2%;
+    text-shadow: 10%;
+    background-color: rgb(178, 245, 140);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+th {
+    padding: 2%;
+    text-shadow: 10%;
+    border: 2px solid rgb(255, 255, 255);
+    border-bottom: 15px;
+    border-radius: 15px 15px 0 0;
+    background: rgb(115, 185, 75);
+}
+
+.body_wrapper {
+    align-items: center;
+    margin-left: 8.33%;
+    margin-right: 8.33%;
+    display: flex;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+img {
+    max-width: 45%;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.imgleft {
+    float: left;
+}
+
+.imgright {
+    float: right;
+}
+
+figure img {
+    margin: 10px;
+}
+
+figcaption {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 5%;
+}
+
+.clear {
+    clear: both;
+}
+
+.output {
+    align-items: center;
+    margin-left: 8.33%;
+    margin-right: 8.33%;
+    display: block;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 2px solid rgb(34, 34, 34);
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(34, 34, 34);
+}
+
+button {
+    font-size: 1.1rem;
+    padding: 20px;
+    border-radius: 15px;
+    color: rgb(34, 34, 34);
+    background-color: rgb(240, 248, 255);
+}
+
+button:hover {
+    color: rgb(34, 34, 34);
+    background: linear-gradient(-45deg, rgb(238, 119, 82), rgb(231, 60, 126), rgb(35, 166, 213), rgb(35, 213, 171));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+iframe {
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 8.33%;
+    margin-right: 8.33%;
+    display: block;
+    width: 83%;
+    height: 280px;
+}
