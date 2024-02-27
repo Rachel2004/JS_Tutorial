@@ -1,2 +1,3 @@
 # JS_Tutorial
-My first website
+This is my first project on GitHub.
+This project is a website made using HTML, CSS and JavaScript.
